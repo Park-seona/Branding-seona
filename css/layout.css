@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding: 80px 20px;
   box-sizing: border-box;
-  /* border: 2px solid red; */
 }
 
 /* === 공통 타이틀 + 여백 === */
@@ -317,9 +316,7 @@ ul.nav {
 
 /* Brand Keywords 섹션 */
 .brand-keywords {
-    /* display: flex; */
     width: 100%;
-    /* height: 900px; */
     padding: 5rem 0 7.5rem;
     background-color: #FBFAFF;
     position: relative;
@@ -329,17 +326,17 @@ ul.nav {
 .brand-card-wrap {
     display: flex;
     justify-content: center;
-    gap: 2.5rem;
+    align-items: center;
+    gap: 3.5rem;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 124px;
 }
 
 .brand-card {
-    flex-grow: 1;
-    flex-basis: 0;
     width: 100%;
-    height: 257px;
+    max-width: 340px;
+    min-height: 257px;
     padding: 24px 24px;
     background-color: #fff;
     box-shadow: 0 0 14px 1px #E8E4F8;
@@ -347,11 +344,19 @@ ul.nav {
     position: relative;
 }
 
+.brand-card p {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    font-weight: 300;
+    padding-right: 24px;
+}
+
 .brand-col {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .brand-col span {
@@ -363,12 +368,6 @@ ul.nav {
     color: #8573F7;
 }
 
-.brand-card p {
-    position: absolute;
-    left: 24px;
-    bottom: 24px;
-    font-weight: 300;
-}
 
 .brand-card p:nth-child(2) {
     font-size: calc(var(--default-FZ)*0.875);
@@ -376,6 +375,179 @@ ul.nav {
 
 .brand-card p > strong {
     font-weight: 400;
+}
+
+
+/* Brand Keywords 섹션 */
+.brand-concept {
+    width: 100%;
+    padding: 5rem 0 7.5rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.concept-big-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.concept-title {
+    text-align: center;
+    background-color: #FBFAFF;
+    border-radius: 12px;
+    font-size: calc(var(--default-FZ)*2.125);
+    line-height: var(--default-LH);
+    margin-top: 95px;
+}
+
+.concept-title b {
+    font-weight: 600;
+    color: #5642F1;
+}
+
+.concept-box-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.concept-box-title {
+    margin-top: 120px;
+    background-color: #5642F1;
+    color: #fff;
+    padding: 12px 21px;
+    border-radius: 12px 12px 0 0;
+    align-self: flex-start;
+    font-size: calc(var(--default-FZ)*1.25);
+}
+
+.concept-box-wrap:nth-child(1) .concept-box {
+    max-width: 630px;
+}
+
+.concept-box-wrap:nth-child(2) .concept-box {
+    max-width: 364px;
+}
+
+.concept-box-wrap:nth-child(3) .concept-box {
+    max-width: 364px;
+}
+
+
+/* Logo System 섹션 */
+.logo-system {
+    width: 100%;
+    padding: 5rem 0 7.5rem;
+    background-color: #FBFAFF;
+    position: relative;
+}
+
+.logo-box-wrap {
+    margin-top: 100px;
+    display: flex;
+    gap: 2rem;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+}
+
+.logo-box {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 정사각형 유지 */
+    max-width: 300px; /* PC 최대 */
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+
+/* Color System 섹션 */
+.color-system {
+    width: 100%;
+    padding: 5rem 0 7.5rem;
+    background-color: #fff;
+}
+
+
+
+.color-box-wrap {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9.063rem;
+}
+
+.color-box {
+    width: 100%;
+    max-width: 448px;
+    min-height: 180px;
+    border-radius: 12px;
+    background-color: #2E2A5E;
+    position: relative;
+}
+
+.color-box span {
+    position: absolute;
+    right: 18px;
+    bottom: 18px;
+    color: #fff;
+}
+
+.color-system .color-ex {
+    margin-top: 145px;
+    width: 100%;
+    max-width: 590px;
+}
+
+
+
+
+
+
+/* Tone & Voice 섹션 */
+.tone-voice {
+    width: 100%;
+    padding: 5rem 0 7.5rem;
+    background-color: #FBFAFF;
+    position: relative;
+}
+
+.tone-voice img {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+
+
+
+/* 다음 페이지 - 이동 버튼 */
+.next-btn {
+  width: 100%;
+  min-height: 240px;
+  background-color: #36297A;
+  color: #fff;
+}
+
+/* a를 버튼 전체로 확장 */
+.next-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 240px;
+
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* 텍스트 */
+.next-btn span {
+  font-size: 4rem; /* 84px → rem 변환 */
+  font-weight: 700;
+  line-height: 1;
 }
 
 
