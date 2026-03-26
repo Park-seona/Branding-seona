@@ -73,7 +73,15 @@
 }
 
 /* ===== 768px 이하 (모바일 큰 화면) ===== */
-@media screen and (max-width: 768px){    
+@media screen and (max-width: 768px){
+  .section-title {
+    font-size: calc(var(--default-FZ)*1.75);
+  }   
+
+  .personal-title {
+    font-size: calc(var(--default-FZ)*1.75);
+  }    
+
   .topbar-inner {
     display: flex;
     justify-content: space-between;
