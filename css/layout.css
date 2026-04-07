@@ -386,6 +386,10 @@ ul.nav {
     position: relative;
 }
 
+.brand-concept > .container {
+  text-align: center;
+}
+
 .concept-big-wrap {
     display: flex;
     justify-content: center;
@@ -399,6 +403,10 @@ ul.nav {
     font-size: calc(var(--default-FZ)*2.125);
     line-height: var(--default-LH);
     margin-top: 95px;
+    
+    display: inline-block;
+    padding: 0 20px;
+    width: fit-content;
 }
 
 .concept-title b {
